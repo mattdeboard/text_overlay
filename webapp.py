@@ -30,7 +30,7 @@ class rageface:
         if not form.validates():
             return render.formtest(form)
         else:
-            createimage(form['input'].value, "static/ragetext.jpg")
+            createimage(form['input'].value, "static/rageface.jpg")
             return render.rageface(imgname)
 
 

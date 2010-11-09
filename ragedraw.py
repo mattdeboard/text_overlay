@@ -1,5 +1,6 @@
 import Image, ImageDraw, ImageFont
 import sys
+
 from os import chdir, path
 
 image = Image.open("static/rageface.jpg")
