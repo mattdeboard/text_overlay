@@ -3,8 +3,8 @@ from web import form
 from ragedraw import *
 
 urls = ('/', 'rageface')
-render = web.template.render('/templates')
-imgname = "/static/ragetext.jpg"
+render = web.template.render('templates/')
+imgname = "static/ragetext.jpg"
 
 app = web.application(urls, globals())
 
@@ -25,12 +25,12 @@ class rageface:
         return render.formtest(form)
 
     def POST(self):
-        imgname = "/static/ragetext.jpg"
+        imgname = "static/ragetext.jpg"
         form = input_form()
         if not form.validates():
             return render.formtest(form)
         else:
-            createimage(form['input'].value, "/static/ragetext.jpg")
+            createimage(form['input'].value, "static/ragetext.jpg")
             return render.rageface(imgname)
 
 
