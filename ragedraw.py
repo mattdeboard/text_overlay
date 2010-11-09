@@ -13,7 +13,7 @@ def createimage(text, outfile):
         fontsize = 48
     font = ImageFont.truetype("OldSansBlack.ttf", fontsize, encoding="unic")
     draw.text((10, 10), text, font=font, fill="red")
-    image.save(outfile)
+    image.save('static/ragetext.jpg')
 
 def returnbaseimage(self):
     image = Image.open("static/ragetext.jpg")

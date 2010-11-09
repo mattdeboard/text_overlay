@@ -4,7 +4,7 @@ from ragedraw import *
 
 urls = ('/', 'rageface')
 render = web.template.render('templates/')
-imgname = "static/ragetext.jpg"
+##imgname = "static/ragetext.jpg"
 
 app = web.application(urls, globals())
 
@@ -25,7 +25,7 @@ class rageface:
         return render.formtest(form)
 
     def POST(self):
-        imgname = "static/ragetext.jpg"
+        imgname = "static/rageface.jpg"
         form = input_form()
         if not form.validates():
             return render.formtest(form)
