@@ -2,7 +2,7 @@ import Image, ImageDraw, ImageFont
 import sys
 from os import chdir, path
 
-image = Image.open("C:\\Documents and Settings\\mdeboard\\Desktop\\rageface.jpg")
+image = Image.open("/static/rageface.jpg")
 draw = ImageDraw.Draw(image)
  
 def createimage(text, outfile):
@@ -15,6 +15,6 @@ def createimage(text, outfile):
     image.save(outfile)
 
 def returnbaseimage(self):
-    image = Image.open("C:\\Documents and Settings\\mdeboard\\Desktop\\rageface.jpg")
+    image = Image.open("/static/rageface.jpg")
     return image.filename
         
