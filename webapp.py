@@ -25,7 +25,7 @@ class rageface:
         return render.formtest(form)
 
     def POST(self):
-        imgname = "static/rageface.jpg"
+        imgname = "static/ragetext.jpg"
         form = input_form()
         if not form.validates():
             return render.formtest(form)

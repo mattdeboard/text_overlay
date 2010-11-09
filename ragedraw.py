@@ -16,6 +16,6 @@ def createimage(text, outfile):
     image.save('static/ragetext.jpg')
 
 def returnbaseimage(self):
-    image = Image.open("static/ragetext.jpg")
+    image = Image.open("static/rageface.jpg")
     return image.filename
         
