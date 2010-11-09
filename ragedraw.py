@@ -3,10 +3,9 @@ import sys
 import random
 from os import remove
 
-image = Image.open("static/rageface.jpg")
-draw = ImageDraw.Draw(image)
- 
 def createimage(text):
+    image = Image.open("static/rageface.jpg")
+    draw = ImageDraw.Draw(image)
     if len(text) <= 7:
         fontsize = 72
     else:        
