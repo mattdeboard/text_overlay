@@ -25,13 +25,12 @@ class rageface:
         return render.formtest(form)
 
     def POST(self):
-        imgname = "static/ragetext.jpg"
         form = input_form()
         if not form.validates():
             return render.formtest(form)
         else:
-            createimage(form['input'].value, "static/rageface.jpg")
-            return render.rageface(imgname)
+            the_image = createimage(form['input'].value)
+            return render.rageface(the_image)
 
 
 if __name__ == "__main__": app.run()
