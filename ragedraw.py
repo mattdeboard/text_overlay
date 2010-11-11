@@ -10,8 +10,8 @@ def createimage(text):
         fontsize = 72
     else:        
         fontsize = 48
-##    font = ImageFont.truetype("ARIALBD.ttf", fontsize, encoding="unic")
-    font = ImageFont.truetype("OldSansBlack.ttf", fontsize, encoding="unic")
+    font = ImageFont.truetype("ARIALBD.ttf", fontsize, encoding="unic")
+##    font = ImageFont.truetype("OldSansBlack.ttf", fontsize, encoding="unic")
     draw.text((10, 10), text, font=font, fill="red")
     newname = 'static/%s.jpg' % random.randint(0,1000000000) 
     image.save(newname)
