@@ -1,0 +1,20 @@
+<html>
+<link rel="stylesheet" href="/rage/static/style.css" type="text/css">
+<body>
+
+{% if img %}
+<div id="background"><img src="{{ img }}" id="bgimg"/></div>
+{% else %}
+<div id="background"><img src="/rage/static/rageface.jpg" id="bgimg"/></div>
+{% endif %}
+
+<div id="form">
+<form method="POST" action=""> {{ form.csrf }}
+        {{ form.ragetext.label }}{{ form.ragetext(size=12) }}
+    <input type="submit" value="Go">
+</form>
+</div>
+
+</body>
+</html>
+
